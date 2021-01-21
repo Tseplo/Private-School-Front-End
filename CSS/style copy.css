@@ -1,0 +1,81 @@
+html {
+    background: rgb(5, 20, 27);
+    background: linear-gradient(90deg, rgba(5, 20, 27, 1) 0%, rgba(36, 128, 172, 1) 100%);
+}
+
+body {
+    color: white;
+    background: rgb(5, 20, 27);
+    background: linear-gradient(90deg, rgba(5, 20, 27, 1) 0%, rgba(36, 128, 172, 1) 100%);
+}
+
+table {
+    border: 0px solid #004492;
+    background-color: rgb(5, 20, 27);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 0px solid #AAAAAA;
+}
+
+table tbody td {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+table tr:nth-child(even) {
+    background: #565264;
+}
+
+table thead {
+    background: #005d81;
+}
+
+table thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 0px solid #A40808;
+}
+
+table thead th:first-child {
+    border-left: none;
+}
+
+table tfoot td {
+    font-size: 13px;
+}
+
+table tfoot .links {
+    text-align: right;
+}
+
+table tfoot .links a {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A40808;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+#updateButton {
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both;
+    height: 60px;
+}
+
+.modal {
+    color: black;
+}

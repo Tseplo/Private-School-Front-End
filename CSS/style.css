@@ -1,0 +1,111 @@
+html {
+    background: rgb(5, 20, 27);
+    background: linear-gradient(90deg, rgba(5, 20, 27, 1) 0%, rgba(36, 128, 172, 1) 100%);
+}
+
+body {
+    background: rgb(5, 20, 27);
+    background: linear-gradient(90deg, rgba(5, 20, 27, 1) 0%, rgba(36, 128, 172, 1) 100%);
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: -11px 13px 13px rgb(0, 0, 0);
+}
+
+h1 span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+}
+
+table {
+    border: 0px solid #CCB7AE;
+    background-color: #CCB7AE;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 0px solid #AAAAAA;
+}
+
+table tbody td {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+table tr:nth-child(even) {
+    background: #565264;
+}
+
+table thead {
+    background: #A6808C;
+}
+
+table thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 0px solid #A40808;
+}
+
+table thead th:first-child {
+    border-left: none;
+}
+
+table tfoot td {
+    font-size: 13px;
+}
+
+table tfoot .links {
+    text-align: right;
+}
+
+table tfoot .links a {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A40808;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
+
+#updateButton {
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both;
+    height: 60px;
+}

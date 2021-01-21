@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </link>
+
+    <script defer src="courseScript.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/CSS/style copy.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/Images/logo.png" alt="Logo" height="70px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto offset-8">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Courses/Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Students/Students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trainers/Trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Assignments/Assignments.html">Assignments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="text-center">
+            <h2>Courses</h2>
+        </div>
+
+        <hr>
+
+        <table id="courseTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Stream</th>
+                    <th>Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CB-12</td>
+                    <td>C#</td>
+                    <td>Part Time</td>
+                    <td>05-10-2020</td>
+                    <td>05-04-2021</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#courseEditModal">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#studentModal1">
+                            Students
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#trainerModal1">
+                            Trainers
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CB-13</td>
+                    <td>Java</td>
+                    <td>Full Time</td>
+                    <td>05-04-2021</td>
+                    <td>05-10-2021</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#courseEditModal">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#studentModal2">
+                            Students
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#trainerModal2">
+                            Trainers
+                        </button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>CB-11</td>
+                    <td>C#</td>
+                    <td>Full Time</td>
+                    <td>05-10-2020</td>
+                    <td>05-01-2021</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#courseEditModal">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#studentModal3">
+                            Students
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#trainerModal3">
+                            Trainers
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CB-14</td>
+                    <td>Python</td>
+                    <td>Part Time</td>
+                    <td>05-10-2021</td>
+                    <td>05-04-2022</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#courseEditModal">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#studentModal4">
+                            Students
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#trainerModal4">
+                            Trainers
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CB-15</td>
+                    <td>Python</td>
+                    <td>Full Time</td>
+                    <td>05-10-2021</td>
+                    <td>05-01-2022</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#courseEditModal">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#studentModal5">
+                            Students
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                            data-target="#trainerModal5">
+                            Trainers
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div class="text-center">
+            <!--Add Course Button-->
+            <a name="" id="" class="btn btn-primary" href="courseForm.html" role="button">Add</a>
+        </div>
+    </div>
+
+    <!-- EDIT COURSE MODAL -->
+    <div class="modal" id="courseEditModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="mt-4 text-center">EDIT COURSE</h1>
+                        <hr>
+                        <form id="courseForm" method="GET">
+                            <div class="form-group">
+                                <label for="">New Title:</label>
+                                <input type="text" class="form-control" name="courseTitle" id="courseTitle"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">New Stream:</label>
+                                <input type="text" class="form-control" name="courseStream" id="courseStream"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">New Type:</label>
+                                <input type="text" name="courseType" id="courseType" class="form-control" placeholder=""
+                                    aria-describedby="helpId">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">New Start Date:</label><br>
+                                <input type="date" name="courseStart" id="courseStart">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">New End Date:</label><br>
+                                <input type="date" name="courseEnd" id="courseEnd">
+                            </div>
+
+                            <div id="error" style="color: red;"></div>
+
+                            <div class="clear"></div>
+
+                            <div class="text-center">
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                            <div class="clear"></div>
+
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 1 STUDENTS MODAL-->
+    <div class="modal" id="studentModal1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Oikonomidis</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments1"
+                                        class="btn btn-secondary btn-sm">Assignments
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ferenc</td>
+                                <td>Shepllo</td>
+                                <td>
+
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments2"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tilemachos</td>
+                                <td>Pouliassis</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments3"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD STUDENT IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select student:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Oikonomidis</option>
+                            <option>Ferenc Shepllo</option>
+                            <option>Tilemachos Pouliassis</option>
+                            <option>Anastasis Tsitsipas</option>
+                            <option>Nikos Neroutsos</option>
+                            <option>Nikitas Prountzos</option>
+                            <option>Napoleon Georgiou</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add Student</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 1 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments1" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Console App</td>
+                                    <td>"Make a console app"</td>
+                                    <td>15-11-2020</td>
+                                    <td>"25"</td>
+                                    <td>"75"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 2 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments2" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 3 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments3" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 2 STUDENTS MODAL-->
+    <div class="modal" id="studentModal2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Students</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Oikonomidis</td>
+                                <td>
+
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments4"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Anastasis</td>
+                                <td>Tsitsipas</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments4"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nikos</td>
+                                <td>Neroutsos</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments4"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD STUDENT IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select student:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Oikonomidis</option>
+                            <option>Ferenc Shepllo</option>
+                            <option>Tilemachos Pouliassis</option>
+                            <option>Anastasis Tsitsipas</option>
+                            <option>Nikos Neroutsos</option>
+                            <option>Nikitas Prountzos</option>
+                            <option>Napoleon Georgiou</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add Student</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 4 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments4" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CLASS 3 STUDENTS MODAL-->
+    <div class="modal" id="studentModal3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Students</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nikitas</td>
+                                <td>Prountzos</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments5"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Anastasis</td>
+                                <td>Tsitsipas</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments5"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Napoleon</td>
+                                <td>Georgiou</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments5"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD STUDENT IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select student:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Oikonomidis</option>
+                            <option>Ferenc Shepllo</option>
+                            <option>Tilemachos Pouliassis</option>
+                            <option>Anastasis Tsitsipas</option>
+                            <option>Nikos Neroutsos</option>
+                            <option>Nikitas Prountzos</option>
+                            <option>Napoleon Georgiou</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add Student</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 5 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments5" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CLASS 4 STUDENTS MODAL-->
+    <div class="modal" id="studentModal4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Students</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pantelis</td>
+                                <td>Perdikeas</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments6"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kostas</td>
+                                <td>Kouveliotis</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+                                    <a data-toggle="modal" href="#studentAssignments6"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Stefanos</td>
+                                <td>Paikos</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments6"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD STUDENT IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select student:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Oikonomidis</option>
+                            <option>Ferenc Shepllo</option>
+                            <option>Tilemachos Pouliassis</option>
+                            <option>Anastasis Tsitsipas</option>
+                            <option>Nikos Neroutsos</option>
+                            <option>Nikitas Prountzos</option>
+                            <option>Napoleon Georgiou</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add Student</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 6 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments6" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 5 STUDENTS MODAL-->
+    <div class="modal" id="studentModal5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Students</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Takis</td>
+                                <td>Tsoukalas</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments7"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nikos</td>
+                                <td>Korompos</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments7"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vasilis</td>
+                                <td>Mavrapostolos</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#studentEditModal">
+                                        Edit
+                                    </button>
+
+                                    <a data-toggle="modal" href="#studentAssignments7"
+                                        class="btn btn-secondary btn-sm">Assignments</a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD STUDENT IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select student:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Oikonomidis</option>
+                            <option>Ferenc Shepllo</option>
+                            <option>Tilemachos Pouliassis</option>
+                            <option>Anastasis Tsitsipas</option>
+                            <option>Nikos Neroutsos</option>
+                            <option>Nikitas Prountzos</option>
+                            <option>Napoleon Georgiou</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add Student</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--ASSIGNMENTS PER STUDENT PER COURSE 7 (SECONDARY MODAL) -->
+        <div class="modal" id="studentAssignments7" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assignments</h4>
+                    </div>
+                    <div class="container"></div>
+                    <div class="modal-body">
+                        <table id="assignmentTable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Date of submission</th>
+                                    <th>Oral Mark</th>
+                                    <th>Total Mark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Web App</td>
+                                    <td>"Make a web app"</td>
+                                    <td>15-01-2021</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td>"Make a mobile app"</td>
+                                    <td>15-12-2020</td>
+                                    <td>"30"</td>
+                                    <td>"70"</td>
+                                    <td>
+                                        <button type="button" class="btn btn-secondary btn-block btn-sm"
+                                            data-toggle="modal" data-target="#assignmentEditModal">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD ASSIGNMENT FOR THIS STUDENT -->
+                    <div class="text-center">
+                        <div class="form-group">
+                            <label for="sel1">Select assignment:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Web App</option>
+                                <option>Mobile App</option>
+                                <option>e-Shop</option>
+                                <option>Console App</option>
+                                <option>Database</option>
+                            </select>
+                        </div>
+                        <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add assignment</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CLASS 1 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Bozas</td>
+                                <td>C#</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>George</td>
+                                <td>Pasparakis</td>
+                                <td>HTML / CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD TRAINER IN COURSE -->
+                <div class="text-center">
+                    <div class="form-group">
+                        <label for="sel1">Select trainer:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Panagiotis Bozas</option>
+                            <option>George Pasparakis</option>
+                            <option>Sandra Tyrovola</option>
+                            <option>Thymios Kolovaris</option>
+                        </select>
+                    </div>
+                    <a name="" id="" class="btn btn-primary" href="Courses.html" role="button">Add trainer</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 2 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>George</td>
+                                <td>Pasparakis</td>
+                                <td>HTML / CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 3 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Bozas</td>
+                                <td>C#</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>George</td>
+                                <td>Pasparakis</td>
+                                <td>HTML / CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--CLASS 4 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal4">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Bozas</td>
+                                <td>C#</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>George</td>
+                                <td>Pasparakis</td>
+                                <td>HTML / CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 5 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal5">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Bozas</td>
+                                <td>C#</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary btn-block btn-sm" data-toggle="modal"
+                                        data-target="#trainerEditModal">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--CLASS 1 TRAINERS MODAL-->
+    <div class="modal" id="trainerModal1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Trainers</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="trainerTable">
+
+                        <thead>
+
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Subject</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Panagiotis</td>
+                                <td>Bozas</td>
+                                <td>C#</td>
+                            </tr>
+
+                            <tr>
+                                <td>George</td>
+                                <td>Pasparakis</td>
+                                <td>HTML / CSS</td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Thymios</td>
+                                <td>Kolovaris</td>
+                                <td>HTML/CSS</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EDIT COURSE MODAL -->
+    <div class="modal" id="assignmentEditModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="mt-4 text-center">EDIT ASSIGNMENT</h1>
+                        <form id="assignmentForm" method="GET">
+                            <div class="form-group">
+                                <label for="">Title:</label>
+                                <input type="text" class="form-control" name="title" id="title"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Description:</label>
+                                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Date Of Submission:</label><br>
+                                <input type="date" name="submission" id="submission">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Oral Mark:</label><br>
+                                <input type="number" name="oralMark" id="oralMark">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="">Total Mark:</label><br>
+                                <input type="number" name="totalMark" id="totalMark">
+                            </div>
+
+                            <div id="error" style="color: red;"></div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EDIT STUDENT MODAL -->
+    <div class="modal" id="studentEditModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="mt-4 text-center">EDIT STUDENT</S></h1>
+                        <hr>
+                        <form id="studentForm" method="GET">
+                            <!-- FIRST NAME -->
+                            <div class="form-group">
+                                <label for="">First Name:</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <!-- LAST NAME -->
+                            <div class="form-group">
+                                <label for="">Last Name:</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <!-- DATE OF BIRTH -->
+                            <div class="form-group">
+                                <label for="">Date Of Birth:</label><br>
+                                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                            </div>
+                            <br>
+                            <!-- TUITION FEES -->
+                            <div class="form-group">
+                                <label for="">Tuition Fees:</label><br>
+                                <input type="number" name="tuitionFees" id="tuitionFees">
+                            </div>
+
+                            <div id="error" style="color: red;"></div>
+
+                            <div class="clear"></div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- EDIT TRAINER MODAL -->
+    <div class="modal" id="trainerEditModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <h1 class="mt-4 text-center">EDIT TRAINER</h1>
+                        <!-- FORM -->
+                        <form id="trainerForm" method="GET">
+                            <!-- FIRST NAME -->
+                            <div class="form-group">
+                                <label for="">First Name:</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <!-- LAST NAME -->
+                            <div class="form-group">
+                                <label for="">Last Name:</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+                            <br>
+                            <!-- Subject -->
+                            <div class="form-group">
+                                <label for="">Subject:</label>
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    aria-describedby="helpId" placeholder="">
+                            </div>
+
+                            <div id="error" style="color: red;"></div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <footer class="bg-dark text-center text-lg-start fixed-bottom">
+
+        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.233)">
+            © 2021 Copyright: Ferenc Shepllo
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

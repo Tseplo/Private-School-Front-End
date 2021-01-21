@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="assignmentScript.js"></script>
+
+    <script defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script defer type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </link>
+
+    <link rel="stylesheet" href="/CSS/style copy.css">
+
+    <title>Private School</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/Images/logo.png" alt="Logo" height="70px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto offset-8">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Courses/Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Students/Students.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trainers/Trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Assignments/Assignments.html">Assignments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mt-4 text-center">NEW ASSIGNMENT</h1>
+        <form id="courseForm" method="GET">
+            <div class="form-group">
+                <label for="">Title:</label>
+                <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId"
+                    placeholder="">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Description:</label>
+                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Date Of Submission:</label><br>
+                <input type="date" name="submission" id="submission">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Oral Mark:</label><br>
+                <input type="number" name="oralMark" id="oralMark">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Total Mark:</label><br>
+                <input type="number" name="totalMark" id="totalMark">
+            </div>
+
+            <div id="error" style="color: red;"></div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <br>
+
+    <div class="clear"></div>
+
+    <footer class="bg-dark text-center text-lg-start fixed-bottom">
+
+        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.233)">
+            © 2021 Copyright: Ferenc Shepllo
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
